@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { infoPagina } from '../interfaces/info-pagina.interface';
 
 
+
 @Injectable({
   providedIn: 'root'
 })
@@ -11,7 +12,7 @@ export class InfoPaginaService {
 
    info:infoPagina = {};
    carga: boolean = false;
-   public equipo:any[] = [];
+   public equipo:any[] = []; /* lo hago un array */
 
                 //inyectamos a http
   constructor(private http: HttpClient) { 
@@ -29,10 +30,13 @@ export class InfoPaginaService {
     }
   //funcion privada para cargar datos desde FireBase
   private datosFirebase (){
-    this.http.get('https://angularapp-4414c-default-rtdb.firebaseio.com/equipo.json').subscribe((res:any)=>{
-      this.equipo = res;    
+    this.http.get('https://angularportfolio-b449d-default-rtdb.firebaseio.com/equipo.json').subscribe((res:any)=>{
       console.log(res);
+      this.equipo = res;  
+      console.log(this.equipo); /* equipo:any[]=[] */
+        
     })
   }
 
 }
+/*  */
