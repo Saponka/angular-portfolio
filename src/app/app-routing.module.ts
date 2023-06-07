@@ -6,7 +6,7 @@ import { ContactoComponent } from './Paginas/contacto/contacto.component';
 import { FormularioComponent } from './Paginas/formulario/formulario.component';
 import { NosotrosComponent } from './Paginas/nosotros/nosotros.component';
 import { ProductosComponent } from './Paginas/productos/productos.component';
-import { PruebaComponent } from './Componente/prueba/prueba.component';
+
 
 const routes: Routes = [
     { path: 'home', component: MainComponent },
@@ -14,7 +14,6 @@ const routes: Routes = [
     { path: 'productos', component: ProductosComponent },
     { path: 'contacto', component: ContactoComponent },
     { path: 'formulario', component: FormularioComponent },
-    { path: 'prueba', component: PruebaComponent},
     { path: '**', pathMatch: 'full', redirectTo: 'home'} 
 ];
 
