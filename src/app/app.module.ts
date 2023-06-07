@@ -8,7 +8,7 @@ import { NavbarComponent } from './Componente/navbar/navbar.component';
 import { NosotrosComponent } from './Paginas/nosotros/nosotros.component';
 import { ProductosComponent } from './Paginas/productos/productos.component';
 import { ContactoComponent } from './Paginas/contacto/contacto.component';
-import { FormularioComponent } from './Paginas/formulario/formulario.component';
+/* import { FormularioComponent } from './Paginas/formulario/formulario.component'; */
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -25,7 +25,7 @@ import {HttpClientModule} from '@angular/common/http';
     NosotrosComponent,
     ProductosComponent,
     ContactoComponent,
-    FormularioComponent,
+    /* FormularioComponent, */
     
   ],
   imports: [
