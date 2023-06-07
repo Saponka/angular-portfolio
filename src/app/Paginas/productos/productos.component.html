@@ -2,30 +2,93 @@
 <div class="ae-container-fluid rk-main">
     <div class="ae-grid">
         <div class="ae-grid__item item-lg-6 item-lg--offset-2">
-            <h4 class="ae-u-bolder au-mb-3 conatct__title">Contact Us</h4>
-            <p class="au-mb-2 contact__desc item-lg--offset-2">Say hello using the <a href="#contact-form">contact form </a>below!
-                <br>We're standing by to help.
-                 <br>Productos Works!!!
+            <h4 class="ae-u-bolder au-mb-3 conatct__title">Products</h4>
+            <p class="au-mb-2 contact__desc item-lg--offset-2">This a the new products in list
+                 <br>Productos Now!!!
             </p>
                  
               
         </div>
     </div>
-    
-            <div class="ae-grid ae-grid--collapse">
-                <div class="ae-grid__item item-lg-12">
-                    <form id="contact-form" action="#0" class="ae-form--full">
-                        <input type="text" placeholder="* Name" required>
-                        <input type="email" placeholder="* Email" required>
-                        <textarea placeholder="Message ..." cols="30" rows="4"></textarea>
-                        <p class="au-xs-ta-right au-pt-4 group-buttons"><a href="#0"
-                                class="arrow-button arrow-button--right arrow-button--out">Send<span class="arrow-cont">
-                                    <svg>
-                                        <use xlink:href="assets/img/symbols.svg#arrow"></use>
-                                    </svg></span></a></p>
-                    </form>
-                </div>
+    <br>
+
+    <div class="ae-masonry ae-masonry-md-3 ae-masonry-xl-4 " ><!--  *ngFor="let imagen of infoservicio.equipo" -->
+            
+        <a href="portfolio-item.html"class="rk-item ae-masonry__item"  >
+          
+            
+            <img src={{infoservicio.mandala[0].img}} alt="mandala"/>
+            <div class="item-meta">
+                <h2>{{infoservicio.mandala[0].nombre}}</h2>
+                <p>Lords of the Rings</p>
             </div>
+        </a>
+
+        <a href="portfolio-item.html" class="rk-item ae-masonry__item">
+            <img src={{infoservicio.mandala[2].img}} alt=""/>
+            <div class="item-meta">
+                <h2>{{infoservicio.mandala[2].nombre}}</h2>
+                <p>Buda Design</p>
+            </div>
+        </a>
+          
+        <a href="portfolio-item.html" class="rk-item ae-masonry__item">
+            <img src={{infoservicio.mandala[3].img}} alt=""/>
+                <div class="item-meta">
+                    <h2>{{infoservicio.mandala[3].nombre}}</h2>
+                    <p>Universe</p>
+                </div>
+            </a>
+        
+        <a href="portfolio-item.html" class="rk-item ae-masonry__item">
+            <img src={{infoservicio.mandala[4].img}} alt=""/>
+            <div class="item-meta">
+                <h2>{{infoservicio.mandala[4].nombre}}</h2>
+                <p>Fire Elemnet</p>
+            </div>
+        </a>
+        <a href="portfolio-item.html" class="rk-item ae-masonry__item">
+            <img src={{infoservicio.mandala[5].img}} alt=""/>
+            <div class="item-meta">
+                <h2>{{infoservicio.mandala[5].nombre}}</h2>
+                <p>Ice Color</p>
+            </div>
+        </a>
+
+        <a href="portfolio-item.html" class="rk-item ae-masonry__item">
+            <img src={{infoservicio.mandala[6].img}} alt=""/>
+            <div class="item-meta">
+                <h2>{{infoservicio.mandala[6].nombre}}</h2>
+                <p>Thai Style</p>
+            </div>
+        </a>
+        <a href="portfolio-item.html" class="rk-item ae-masonry__item">
+            <img src={{infoservicio.mandala[7].img}} alt=""/>
+            <div class="item-meta">
+                <h2> {{infoservicio.mandala[7].nombre}}</h2>
+                <p>Packaging</p>
+            </div>
+        </a>
+        <a href="portfolio-item.html" class="rk-item ae-masonry__item">
+            <img src={{infoservicio.mandala[8].img}} alt=""/>
+            <div class="item-meta">
+                <h2>{{infoservicio.mandala[8].nombre}}</h2>
+                <p>Branding</p>
+            </div>
+        </a>
+        <a href="portfolio-item.html" class="rk-item ae-masonry__item">
+            <img src={{infoservicio.mandala[9].img}} alt="" />
+            <div class="item-meta">
+                <h2>{{infoservicio.mandala[9].nombre}}</h2>
+                <p>UI/UX</p>
+            </div>
+        </a>
+      
+        
+    </div>
+    
+    
+           
         </div>
   
 
