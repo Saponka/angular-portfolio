@@ -9,7 +9,7 @@ import { NosotrosComponent } from './Paginas/nosotros/nosotros.component';
 import { ProductosComponent } from './Paginas/productos/productos.component';
 import { ContactoComponent } from './Paginas/contacto/contacto.component';
 import { FormularioComponent } from './Paginas/formulario/formulario.component';
-import { PruebaComponent } from './Componente/prueba/prueba.component';
+
 
 import { AppRoutingModule } from './app-routing.module';
 //modulos http/get/post/etc
@@ -26,7 +26,7 @@ import {HttpClientModule} from '@angular/common/http';
     ProductosComponent,
     ContactoComponent,
     FormularioComponent,
-    PruebaComponent
+    
   ],
   imports: [
     BrowserModule,
